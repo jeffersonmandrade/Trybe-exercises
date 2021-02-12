@@ -1,0 +1,26 @@
+h1 { 
+    font-family:sans-serif ;
+    font-style: oblique;
+    text-align: center;
+    text-decoration: seashell;
+}
+p{
+    font-weight: 600px;
+    font-size: 3em;
+    line-height: 10px;
+    text-decoration: red;
+    }
+body{
+    font-size: 16px ;
+    }
+.amarelo{
+    background-color: yellow;
+    font-style: inherit;
+}
+.vermelho{
+    background-color: red;
+}
+.marrom{
+    background-color: brown;
+    font-style: oblique;
+}
