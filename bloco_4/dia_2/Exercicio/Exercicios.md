@@ -20,6 +20,7 @@ A média aritmética é o resultado da soma de todos os elementos divido pelo n�
 9-Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2 .
 
 BONUS
+
 1-Ordene o array numbers em ordem crescente e imprima seus valores;
 
 2-Ordene o array numbers em ordem decrescente e imprima seus valores;
