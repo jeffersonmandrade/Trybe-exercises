@@ -1,4 +1,4 @@
-let num = 18;
+let num = 1;
 let divisors = [];
 
 for(let index = 1;index <= num;index+=1){
