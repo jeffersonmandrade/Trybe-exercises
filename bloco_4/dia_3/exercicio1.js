@@ -4,12 +4,12 @@ let linha = "" ;
 
 if( n > 1){
 for(let index=0 ; index < n;index++){
-  linha += str
+  linha += str;
 }
 for(let index=0; index < n;index++){
-  console.log(linha)
+  console.log(linha);
 }}else{
-  console.log('ERRO, Valor de n Inválido.')
+  console.log('ERRO, Valor de n Inválido.');
 }
 
 // Metodo usando .repeat
