@@ -24,11 +24,11 @@ function div(a,b){
   return divisao
 }
 
-console.log(div(2,1))
+console.log(div(5,2))
 
 function mod(a,b){
   let multiplicacao = a%b
-  return multiplicacao
+  return console.log(multiplicacao)
 }
 
-console.log(mod(3,2))
+mod(3,2)

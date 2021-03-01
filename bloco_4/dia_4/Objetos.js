@@ -16,4 +16,5 @@ let player = {
 
   console.log(`A jogadora ${player['name']} ${player.lastName} foi eleita ${(player.bestInTheWorld).length} vezes.`)
 
-  console.log(`A jogadora possui ${player['medals']["golden"]} de ouro e ${player['medals']['silver']}`)
+  console.log(`A jogadora possui ${player['medals']["golden"]}medalhas de ouro e ${player['medals']['silver']} medalhas de prata`)
+
