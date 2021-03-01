@@ -1,4 +1,4 @@
-let array = [2, 3, 6, 7, 10, 1]
+// A função maior() retorna o índice do maior valor
 
 function maior (a) {
 let array = a
@@ -19,5 +19,4 @@ for(let index=0 ; index < array.length; index += 1 ){
 }
 return console.log(indice)
 }
-
-maior([2, 13, 6, 7, 10, 1])
+maior([2, 3, 6, 7, 10, 1])
