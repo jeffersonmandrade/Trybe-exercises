@@ -9,14 +9,10 @@ for(let index = 0; index < array.length; index += 1){
 
   if(maior < array[index]){
     maior = array[index]
-
-  }
-}
-for(let index=0 ; index < array.length; index += 1 ){
-  if(maior == array[index]){
     indice = index
+  }
+
 }
-}
-return console.log(indice)
+return console.log("O indice de maior valor é " + indice + ".")
 }
 maior([2, 3, 6, 7, 10, 1])
