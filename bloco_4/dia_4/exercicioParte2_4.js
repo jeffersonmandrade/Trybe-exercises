@@ -1,4 +1,4 @@
-let array = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+let array = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana','Jefferson'];
 let nomes = []
 let maisCaracter = 0
 let indice = 0
