@@ -156,7 +156,7 @@ function colorTask(cor) {
   creatCor.className = 'task'
 
 }
-colorTask('red')
+colorTask('blue')
 
 // 9-Implemente uma função que adiciona um evento que ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected ela estará selecionada.
 // Ao clicar novamente no elemento a sua classe deverá voltar a ser somente task , ou seja, esta tarefa está deixando de ser uma tarefa selecionada.
@@ -165,8 +165,8 @@ function taskClass() {
   let newClassName = document.getElementsByClassName('task selected')
   let myTask = document.querySelector('.task')
 
-  myTask.addEventListener('click',function (event){
-    if(newClassName.length == 0){
+  myTask.addEventListener('click', function (event) {
+    if (newClassName.length == 0) {
       event.target.className = 'task selected';
     } else {
       event.target.className = 'task';
@@ -182,9 +182,23 @@ taskClass()
 // 10-Implemente uma função que adiciona um evento que ao clicar em um dia do mês no calendário, atribua a este dia a cor da legenda da sua tarefa selecionada.
 // Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119) .
 
-let day = document.querySelector('#days')
+function changeColorNumbers() {
 
-day.addEventListener('click',function (event) {
-  event.target.className = 'task selected'
 
-})
+  let selctedTask = document.getElementsByClassName('task selected')
+  let day = document.querySelector('#days')
+  let task = document.querySelector('.task')
+
+  let currentColor = task.style.backgroundColor
+
+  day.addEventListener('click', function (event) {
+    let cor = event.target.style.color;
+    if (selctedTask.length > 0 && cor != currentColor) {
+      event.target.style.color = selctedTask[0].style.backgroundColor
+    } else if (cor === currentColor && selctedTask.length >= 1) {
+      event.target.style.color = 'rgb(119,119,119)'
+    }
+
+  })
+}
+changeColorNumbers()
