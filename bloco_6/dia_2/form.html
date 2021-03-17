@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/dia_2/node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
   <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
@@ -21,7 +21,7 @@
     <div class="form-row align-items-center">
       <div class="form-group">
         <label for="input-name">Nome:
-          <input autocomplete = " off"  data-validate-field = " name " class="form-control form-control-sm" name="nome" type="text" maxlength="40" id="input-name" required
+          <input autocomplete = " off"  data-validate-field = "name" class="form-control form-control-sm" name="nome" type="text" maxlength="40" id="input-name" required
             placeholder="Digite seu nome:" autofocus>
         </label>
       </div>
@@ -93,13 +93,15 @@
     <button type="submit" class=" btn btn-primary btn-sm btn btn-success "> Send</button>
     <button type="reset" class=" btn btn-primary btn-sm btn btn-danger "> Reset</button>
   </form>
-  <script src="scrip.js"></script>
+  <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
   <script src="pikaday.js"></script>
   <script>
     var picker = new Pikaday({ field: document.getElementById('datepicker') });
   </script>
 
-<script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
+  <script src="scrip.js"></script>
+
+
 
 
 
