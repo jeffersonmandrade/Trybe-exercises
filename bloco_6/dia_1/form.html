@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Formulario de Curriculo</h1>
+  <form action="" method="GET" >
+    <label for="input-name">Nome:
+      <input  name ="nome"type="text" maxlength="40" id="input-name" required placeholder="Digite seu nome:" autofocus>
+    <br>
+    <br>
+    </label>
+    <label for="input-email">Email:
+      <input type="email" maxlength="50"
+      id="input-email:"
+      required
+      placeholder="Digite seu email:"
+      required>
+    </label>
+    <br>
+    <br>
+    <label for="input-cpf">CPF:
+      <input type="text" maxlength="14"
+      id="input-cpf"
+      required
+      placeholder="Digite seu CPF:"
+      required>
+    </label>
+    <br>
+    <br>
+    <label for="input-adress">Endereço:
+      <input type="text" maxlength="200"
+      id="input-adress"
+      required
+      placeholder="Digite seu endereço:"
+      required>
+    </label>
+    <label for="input-city">Cidade:
+      <input type="text" maxlength="28"
+      id="input-city"
+      required
+      placeholder="Digite sua cidade:"
+      required>
+    </label>
+    <br>
+    <br>
+
+    <label for="input-state">Estado:
+      <select name = "estado" id="input-state">
+       </select>
+    </label>
+    <br>
+    <br>
+    <label for="button-1">
+      <input type="radio"
+      id="button-1"
+      name="moradia"
+      required>Casa
+    </label>
+    <label for="button-2">
+      <input type="radio"
+      id="button-2"
+      name="moradia"
+      required>Apartamento
+    </label>
+    <p>Resumo do curriculo:</p>
+    <textarea name="resumo-curriculo" id="text-area" cols="30" rows="10"
+    maxlength="1000"
+    required></textarea>
+    <br>
+    <br>
+    <label for="input-cargo">Cargo:
+      <input type="text"
+      id="input-cargo"
+      required maxlength="40" placeholder="Digite seu cargo:">
+    </label>
+    <br>
+    <br>
+    <p>Descição do cargo:</p>
+      <textarea name="" id="" cols="30" rows="10"
+      maxlength="500"
+      required></textarea>
+    <br>
+    <br>
+    <label for="input-date">Data de Inicio::
+      <input type="text"
+      id="input-date"
+      required maxlength="10" placeholder="dd/mm/aaaa"
+      >
+    </label>
+<br>
+    <button type="submit">Send</button>
+
+  </form>
+  <script src="scrip.js"></script>
+</body>
+
+</html>
