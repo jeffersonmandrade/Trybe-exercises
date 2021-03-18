@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Formulario</h1>
+  <form action="" method="GET" enctype="multipart/form-data">
+  <label for="nome-completo">Nome Completo:
+      <input type="text" name="nome" id="nome-completo" placeholder="Digite seu nome" required>
+  </label>
+  <br>
+  <label for="input-email">
+    E-mail:
+    <input type="email" name="email" id="input-email" placeholder="Digite seu email:" required>
+  </label>
+  <br>
+  <label for="">Estado que você mora:
+    <select name="estado" id="input-estado">
+      <option value="sp">São Paulo</option>
+      <option value="mg" selected >Minas Gerais  </option>
+      <option value="ac">Acre</option>
+      <option value="pr">Parana</option>
+    </select>
+  </label>
+  <br>
+  <p>Selecione sua foto:</p>
+  <input type="file" name = "foto" id= "foto-perfil">
+  </form>
+  <p>Comidas favoritas:</p>
+  <label for="comida-1">
+    <input type="radio" id="comida-1" name="comida-favorita" value = "pizza" checked >Pizza
+  </label>
+  <label for="comida-2">
+    <input type="radio" id="comida-2" name="comida-favorita" value = "lasanha">Lasanha
+  </label>
+  <label for="comida-3">
+    <input type="radio" id="comida-3" name="comida-favorita" value = "hamburguer">Hamburguer
+  </label>
+  <label for="comida-4">
+    <input type="radio" id="comida-4" name="comida-favorita" value = "sorvete">Sorvete
+  </label>
+  <br>
+
+  <p>Escreva algo sobre você:</p>
+  <textarea name="sobre-mim" id="textarea-1" cols="30" rows="5"></textarea>
+  <br>
+  <p>Digite sua senha:</p>
+  <label for="input-senha">
+    <input type="password" name = "senha" id="input-senha" required
+    placeholder="Digite sua senha:">
+  </label>
+  <br>
+  <br>
+  <label for="checkbox-noticias">
+    <input type="checkbox" name ="promocoes" id="checkbox-noticias"> Deseja receber noticias e promoções?
+  </label>
+
+  <br>
+  <button type="submit">Enviar</button>
+
+
+</body>
+</html>
