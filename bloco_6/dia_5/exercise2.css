@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+header p {
+  text-align: center;
+  color: black;
+  font-size: x-large;
+
+}
+nav {
+  display: none;
+}
+.aside-one{
+  padding-bottom: 15px;
+}
+h1{
+  margin: 10px;
+  font-size: 30px;
+}
+h2, h3 {
+  margin: 10px;
+  font-size:25px;
+}
+p {
+  margin: 5px 20px;
+  font-size: 20px;
+  text-align: justify;
+}
