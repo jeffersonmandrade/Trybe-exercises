@@ -18,37 +18,38 @@ const lesson3 = {
   turno: 'noite',
 };
 
-// const addperiod = (lesson,turno,periodo) =>{
-//   lesson[turno] = periodo;
-// }
+const addperiod = (lesson,turno,periodo) =>{
+  lesson[turno] = periodo;
+}
 
-// addperiod(lesson2,'turno','tarde');
-// console.log(lesson2);
+addperiod(lesson2,'turno','tarde');
+console.log(lesson2);
 
-// const listkeys = (obj) => {
-//   let objeto = obj
-//   console.log(Object.keys(objeto))
-// }
+const listkeys = (obj) => {
+  let objeto = obj
+  console.log(Object.keys(objeto))
+}
 
-// listkeys(lesson3)
+listkeys(lesson3)
 
-// const sizeObject = (obj) => {
-//   let sizeObj = Object.keys(obj)
-//   console.log(`O tamanho do Objeto é ${sizeObj.length - 1}`)
-// }
+const sizeObject = (obj) => {
+  let sizeObj = Object.keys(obj)
+  console.log(`O tamanho do Objeto é ${sizeObj.length - 1}`)
+}
 
-// sizeObject(lesson2)
+sizeObject(lesson2)
 
-// const listvalues = (obj) => {
-//   let objeto = obj
-//   console.log(Object.values(objeto))
-// }
+const listvalues = (obj) => {
+  let objeto = obj
+  console.log(Object.values(objeto))
+}
 
-// listvalues(lesson3)
+listvalues(lesson3)
 
 
 const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
-//console.log(allLessons)
+console.log(allLessons)
+
 const totalStudents = () =>{
 let total = 0
   for( keys in allLessons){
@@ -80,3 +81,36 @@ const veryfyPair = (obj,key,value) => {
   }
 }
 veryfyPair(lesson3,'materia','Maria Clara')
+
+// bonus
+
+const totalStudentsMath = () =>{
+  let total = 0
+  for( keys in allLessons){
+    if( allLessons[keys]['materia'] === 'Matemática'){
+    total += allLessons[keys]['numeroEstudantes']
+  }
+ } return console.log(`O total de alunos em Mátematica é :${total}`)
+
+}
+
+totalStudentsMath()
+
+const createReport = (object,teacher) => {
+let newObject = {}
+let array = []
+let total = 0
+  for(keys in object){
+    if(object[keys]['professor'] == teacher){
+      total += object[keys]['numeroEstudantes']
+      array.push(object[keys]['materia'])
+      newObject = {
+        professor: teacher,
+        aulas:  array,
+        estudantes: total
+      }
+    }
+  }
+  return console.log(newObject)
+}
+createReport(allLessons,'Carlos')
