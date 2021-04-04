@@ -18,3 +18,4 @@ sortArray(oddsAndEvens)
 
 
 console.log(`"Os números ${oddsAndEvens.sort((a,b) => a - b)} se encontram ordenados de forma crescente!"`)
+

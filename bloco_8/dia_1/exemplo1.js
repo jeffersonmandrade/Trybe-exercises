@@ -39,3 +39,11 @@
 
 // console.log(greaterThan10(15));
 // console.log(greaterThan(10)(15))
+
+const acordando = () => console.log('Acordando !!!');
+const cafe = () => console.log('Bora tomar café !!');
+const dormir = () => console.log('Partiu Dormir !!');
+
+const doingThing = (callback) => callback();
+
+doingThing(acordando);
