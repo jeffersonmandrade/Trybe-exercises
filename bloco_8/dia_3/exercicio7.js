@@ -71,4 +71,5 @@ function authorWith3DotsOnName() {
   return newArray[0].name
 }
 
+
 assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);

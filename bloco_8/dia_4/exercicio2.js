@@ -69,7 +69,7 @@ const books = [
 
 function allNames() {
   // escreva seu código aqui
-  let names = books.reduce((acc,element,index,array) => {
+  const names = books.reduce((s,element,index,array) => {
     if(index === array.length -1){ return `${acc} ${element.author.name}.`;
       } else { return `${acc} ${element.author.name},`;
       }},'Nomes:');

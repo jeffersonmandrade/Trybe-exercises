@@ -11,6 +11,7 @@ function flatten() {
   // escreva seu código aqui
 
    const newArray = arrays.reduce((result,element) => result.concat(element))
+
     return newArray
 }
 
