@@ -17,16 +17,18 @@ const users = {
     return findUserById(userID).then(user => user.name);
   };
 
-  describe('verifica o getUserName', () => {
- test('retorna o user' ,() =>{
-   expect.assertions(1);
-        return getUserName(4).then((name) => expect(name).toEqual('Mark'))
-      })
-
-  test('retorna o erro',() => {
-    expect.assertions(1)
-    return getUserName(7).catch(error => {
-      expect(error).toEqual({error: "User with 7 not found."})
+  describe('teste usando async/await',() => {
+    test('o id', async () => {
+      expect.assertions(1)
+      const user = await getUserName(4);
+      expect(user).toEqual('Mark')
+    })
+    it('retorna o erro', async() => {
+      expect.assertions(1);
+      try{
+        await getUserName(7)
+      } catch (error) {
+        expect(error).toEqual({error: "User with 7 not found."})
+      }
     })
   })
-})
