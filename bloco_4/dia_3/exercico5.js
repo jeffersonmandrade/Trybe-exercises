@@ -1,4 +1,4 @@
-let n =8;
+let n =13;
 let str = "*";
 let space = " ";
 
