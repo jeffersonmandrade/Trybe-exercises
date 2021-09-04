@@ -22,7 +22,13 @@ const getAll = async () => {
 }
 
 const getUserId = async (id) => {
-  const result = await connection().then((db) => db.collection("user").find({_id: ObjectId(Number(id))}) )
+  const result = await connection().then((db) => db.collection("user").findOne(new ObjectId(id) )).catch(() => null)
+  return result
 }
 
-module.exports = { insertUser, getAll};
+const changeUser = async(id) => {
+  const userId = await getUserId(id);
+
+}
+
+module.exports = { insertUser, getAll, getUserId};

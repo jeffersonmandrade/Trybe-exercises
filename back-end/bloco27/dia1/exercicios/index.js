@@ -29,6 +29,17 @@ app.get('/user',async(req,res) => {
 
 app.get('/user/:id', async(req,res) => {
   const{ id } = req.params;
+  const result  = await User.getUserId(id)
+  if(!result){
+    return res.status(404).json(  {
+      "error": true,
+      "message": "Usuário não encontrado"
+  })
+  }
+  res.status(200).json(result)
+})
+
+app.put('/user/:id',(req,res) => {
 
 })
 
